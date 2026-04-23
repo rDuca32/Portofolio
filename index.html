@@ -6,22 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duca Raul - Portofolio</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/output.css">
     <script src="js/script.js" defer></script>
 
     <link rel="icon" href="images/logo.png">
 </head>
 
-<body>
-    <header>
+<body class="flex flex-col min-h-screen bg-[var(--bg-color)] text-[var(--text-color)] font-sans">
+<header>
 
     </header>
 
-    <main>
+    <main class="flex-grow container mx-auto px-4 py-10">
+    <section class="personal-projects">
+        <h1 class="text-4xl font-extrabold mb-8 text-center">Personal Projects</h1>
+        
+        <div class="grid grid-cols-1 gap-6">
+            
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
+                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Pet Adoption App</h2>
+                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made for people who want to adopt some cute little guys.</p>
+            </div>
 
-    </main>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
+                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">HomeMate</h2>
+                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made for organizing household chores.</p>
+            </div>
 
-    <footer>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
+                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Campionii României</h2>
+                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made for educational purposes designed for 4th graders.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
+                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Competitive Wordle 1vs1</h2>
+                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made to have fun with a friend and see who is better at the game of Wordle.</p>
+            </div>
+
+            </div>
+    </section>
+</main> 
+
+    <footer class="">
         <p>&copy; Duca Raul - 2026</p>
     </footer>
 </body>
