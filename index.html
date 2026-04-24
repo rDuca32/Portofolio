@@ -18,37 +18,73 @@
     </header>
 
     <main class="flex-grow container mx-auto px-4 py-10">
+    <section class="intro text-center py-16 dark:bg-gray-800 rounded-xl mb-10 shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-extrabold text-green-800 dark:text-green-100 mb-4">Hi, I'm Duca Raul</h1>
+            <p class="text-xl text-green-700 dark:text-green-300 mb-6 max-w-2xl mx-auto">
+                A passionate full-stack developer specializing in modern web apps. I love building user-friendly solutions for real-world problems, from pet adoption platforms to educational games.
+            </p>
+            <p class="text-lg text-green-600 dark:text-green-400">
+                Explore my personal projects below, showcasing my skills in technologies like Spring Boot, Angular, Next.js, and more.
+            </p>
+            <a href="#personal-projects" class="inline-block mt-6 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors duration-300 shadow-md">
+                View My Projects
+            </a>
+        </div>
+    </section>
+
     <section class="personal-projects">
-        <h1 class="text-4xl font-extrabold mb-8 text-center">Personal Projects</h1>
+        <h1 class="text-4xl font-extrabold mb-8 text-center text-green-800 dark:text-green-100">Personal Projects</h1>
         
-        <div class="grid grid-cols-1 gap-6">
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-2">
             
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
-                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Pet Adoption App</h2>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made for people who want to adopt some cute little guys.</p>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-green-300 dark:hover:border-green-600 transform hover:-translate-y-1">
+                <h2 class="text-2xl font-bold text-green-600 dark:text-green-400 mb-2">Pet Adoption App</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">A full-stack pet adoption platform developed with Spring Boot, Angular, PostgreSQL, and Docker. Features RESTful APIs, user profiles, pet listings, filtering, and adoption tracking.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Spring Boot</span>
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Angular</span>
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">PostgreSQL</span>
+                </div>
             </div>
 
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
-                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">HomeMate</h2>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made for organizing household chores.</p>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-green-300 dark:hover:border-green-600 transform hover:-translate-y-1">
+                <h2 class="text-2xl font-bold text-green-600 dark:text-green-400 mb-2">HomeMate</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">A household management web app built with Spring Boot and Angular. Includes features for rooms, tasks, dashboards, and user profiles, with JWT security and RabbitMQ messaging.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Spring Boot</span>
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Angular</span>
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">JWT</span>
+                </div>
             </div>
 
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
-                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Campionii României</h2>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made for educational purposes designed for 4th graders.</p>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-green-300 dark:hover:border-green-600 transform hover:-translate-y-1">
+                <h2 class="text-2xl font-bold text-green-600 dark:text-green-400 mb-2">Campionii României</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">An educational Android game for 4th graders using Python and Kivy. Teaches geography and history through interactive mini-games, quizzes, timers, and a regional map interface.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Python</span>
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Kivy</span>
+                </div>
             </div>
 
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 dark:border-gray-700">
-                <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Competitive Wordle 1vs1</h2>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">An app made to have fun with a friend and see who is better at the game of Wordle.</p>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-green-300 dark:hover:border-green-600 transform hover:-translate-y-1">
+                <h2 class="text-2xl font-bold text-green-600 dark:text-green-400 mb-2">Competitive Wordle 1vs1</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">A multiplayer Wordle game built with Next.js and Node.js. Features real-time synchronization over LAN, allowing competitive play between friends.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Next.js</span>
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Node.js</span>
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">WebSockets</span>
+                </div>
             </div>
 
-            </div>
+        </div>
     </section>
 </main> 
 
-    <footer class="">
-        <p>&copy; Duca Raul - 2026</p>
+    <footer class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 py-6 mt-10">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2026 - Duca Raul</p>
+        </div>
     </footer>
 </body>
 
