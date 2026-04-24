@@ -7,23 +7,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-green-100: oklch(96.2% 0.044 156.743);
-    --color-green-200: oklch(92.5% 0.084 155.995);
-    --color-green-300: oklch(87.1% 0.15 154.449);
-    --color-green-400: oklch(79.2% 0.209 151.711);
-    --color-green-600: oklch(62.7% 0.194 149.214);
-    --color-green-700: oklch(52.7% 0.154 150.069);
-    --color-green-800: oklch(44.8% 0.119 151.328);
-    --color-green-900: oklch(39.3% 0.095 152.535);
-    --color-green-950: oklch(26.6% 0.065 152.934);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
-    --color-black: #000;
+    --color-gray-900: oklch(21% 0.034 264.665);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-2xl: 42rem;
@@ -307,12 +299,6 @@
   .bg-\(--bg-color\) {
     background-color: var(--bg-color);
   }
-  .bg-green-100 {
-    background-color: var(--color-green-100);
-  }
-  .bg-green-600 {
-    background-color: var(--color-green-600);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -402,15 +388,6 @@
   .text-gray-600 {
     color: var(--color-gray-600);
   }
-  .text-green-600 {
-    color: var(--color-green-600);
-  }
-  .text-green-700 {
-    color: var(--color-green-700);
-  }
-  .text-green-800 {
-    color: var(--color-green-800);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -444,20 +421,6 @@
       }
     }
   }
-  .hover\:border-green-300 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--color-green-300);
-      }
-    }
-  }
-  .hover\:bg-green-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-700);
-      }
-    }
-  }
   .hover\:shadow-2xl {
     &:hover {
       @media (hover: hover) {
@@ -486,55 +449,76 @@
       background-color: var(--color-gray-800);
     }
   }
-  .dark\:bg-green-900 {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-green-900);
-    }
-  }
   .dark\:text-gray-400 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-gray-400);
     }
   }
-  .dark\:text-green-100 {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-green-100);
-    }
-  }
-  .dark\:text-green-200 {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-green-200);
-    }
-  }
-  .dark\:text-green-300 {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-green-300);
-    }
-  }
-  .dark\:text-green-400 {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-green-400);
-    }
-  }
-  .dark\:hover\:border-green-600 {
-    @media (prefers-color-scheme: dark) {
-      &:hover {
-        @media (hover: hover) {
-          border-color: var(--color-green-600);
-        }
-      }
-    }
-  }
 }
 :root {
-  --bg-color: #f0fdf4;
-  --text-color: #14532d;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-text: #1f2937;
+  --secondary-text: #374151;
+  --tertiary-text: #4b5563;
+  --button-bg: #4b5563;
+  --button-hover: #374151;
+  --icon-text: #6b7280;
+  --tag-bg: #f3f4f6;
+  --tag-text: #111827;
+  --hover-border: #d1d5db;
+  --footer-bg: #f3f4f6;
+  --footer-text: #111827;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #14532d;
-    --text-color: #f0fdf4;
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-text: #f9fafb;
+    --secondary-text: #d1d5db;
+    --tertiary-text: #9ca3af;
+    --button-bg: #4b5563;
+    --button-hover: #374151;
+    --icon-text: #d1d5db;
+    --tag-bg: #111827;
+    --tag-text: #e5e7eb;
+    --hover-border: #4b5563;
+    --footer-bg: #111827;
+    --footer-text: #e5e7eb;
   }
+}
+.primary-text {
+  color: var(--primary-text);
+}
+.secondary-text {
+  color: var(--secondary-text);
+}
+.tertiary-text {
+  color: var(--tertiary-text);
+}
+.button-bg {
+  background-color: var(--button-bg);
+}
+.button-hover:hover {
+  background-color: var(--button-hover);
+}
+.icon-text {
+  color: var(--icon-text);
+}
+.tag-bg {
+  background-color: var(--tag-bg);
+}
+.tag-text {
+  color: var(--tag-text);
+}
+.hover-border {
+  border-color: var(--hover-border);
+}
+.footer-bg {
+  background-color: var(--footer-bg);
+}
+.footer-text {
+  color: var(--footer-text);
 }
 @property --tw-rotate-x {
   syntax: "*";

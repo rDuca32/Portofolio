@@ -1,13 +1,53 @@
 @import "tailwindcss";
 
 :root {
-    --bg-color: #f0fdf4;
-    --text-color: #14532d;
+    /* Main Colors */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+
+    /* Custom Color Variables */
+    --primary-text: #1f2937; /* gray-800 */
+    --secondary-text: #374151; /* gray-700 */
+    --tertiary-text: #4b5563; /* gray-600 */
+    --button-bg: #4b5563; /* gray-600 */
+    --button-hover: #374151; /* gray-700 */
+    --icon-text: #6b7280; /* gray-500 */
+    --tag-bg: #f3f4f6; /* gray-100 */
+    --tag-text: #111827; /* gray-900 */
+    --hover-border: #d1d5db; /* gray-300 */
+    --footer-bg: #f3f4f6; /* gray-100 */
+    --footer-text: #111827; /* gray-900 */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #14532d;
-        --text-color: #f0fdf4;
+        --bg-color: #000000;
+        --text-color: #ffffff;
+
+        /* Dark mode colors */
+        --primary-text: #f9fafb; /* gray-50 */
+        --secondary-text: #d1d5db; /* gray-300 */
+        --tertiary-text: #9ca3af; /* gray-400 */
+        --button-bg: #4b5563; /* gray-600 */
+        --button-hover: #374151; /* gray-700 */
+        --icon-text: #d1d5db; /* gray-300 */
+        --tag-bg: #111827; /* gray-900 */
+        --tag-text: #e5e7eb; /* gray-200 */
+        --hover-border: #4b5563; /* gray-600 */
+        --footer-bg: #111827; /* gray-900 */
+        --footer-text: #e5e7eb; /* gray-200 */
     }
 }
+
+/* Custom Classes */
+.primary-text { color: var(--primary-text); }
+.secondary-text { color: var(--secondary-text); }
+.tertiary-text { color: var(--tertiary-text); }
+.button-bg { background-color: var(--button-bg); }
+.button-hover:hover { background-color: var(--button-hover); }
+.icon-text { color: var(--icon-text); }
+.tag-bg { background-color: var(--tag-bg); }
+.tag-text { color: var(--tag-text); }
+.hover-border { border-color: var(--hover-border); }
+.footer-bg { background-color: var(--footer-bg); }
+.footer-text { color: var(--footer-text); }
